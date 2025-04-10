@@ -1,0 +1,26 @@
+{
+  "binary": {
+    "sample_rate": "2Hz",
+    "window_minutes": 180,
+    "model": "DecisionTreeClassifier",
+    "mcc": 0.998755,
+    "accuracy": 0.999377,
+    "model_path": "experiment_results/models/binary/best_aggregate_2Hz_180min.pkl"
+  },
+  "multiclass": {
+    "sample_rate": "1Hz",
+    "window_minutes": 90,
+    "model": "ExtraTreesClassifier",
+    "mcc": 1.0,
+    "accuracy": 1.0,
+    "model_path": "experiment_results/models/multiclass/best_aggregate_1Hz_90min.pkl"
+  },
+  "combined": {
+    "sample_rate": "2Hz",
+    "window_minutes": 180,
+    "binary_model": "DecisionTreeClassifier",
+    "multiclass_model": "ExtraTreesClassifier",
+    "mcc": 0.998913,
+    "accuracy": 0.999222
+  }
+}
